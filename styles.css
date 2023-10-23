@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+
+}
+
+.logo img{
+    line-height: 80px;
+    margin-left: 15%;
+    width: 60px; /* Adjust the max width of the logo */
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #000000;
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(to bottom, #050c35, #2a80b9);*/
+}
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.bank-building {
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-top: 20px;
+}
+footer{
+    
+    background: linear-gradient(to bottom, #050c35, #2a80b9);
+    color: white; /* Text color */
+    text-align: center; /* Center align the text */
+    padding: 40px 0; /* Add some padding for spacing */
+}
+.footer-container{
+    flex: 1;
+    padding: 10px;
+}
+.footer-container ul li {
+    margin-bottom: 30px; 
+}
+
+.footer-container ul li:last-child {
+    margin-bottom: 0; 
+}
+footer a{
+    color: #fff;
+}
+footer a:hover{
+    color: pink;
+}
+h1 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #ccc;
+}
+h2, h3{
+    text-align: center;
+    font-family: 'Merriweather';
+}
+p{
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Barlow';
+}
+
+.card img {
+    border-radius: 15px 15px 10px 10px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.card h3 {
+    text-align: center;
+    margin: 35px auto;
+    font-size: 30px;
+}
+.card{
+    width: 100%;
+    flex: 1;
+    border: 1px solid #000000;
+    border-radius: 15px 15px 15px 15px;
+    transition: box-shadow 0.5s;
+    margin: 10px;
+    background-color: #a0b8d8;
+    height: 550px;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    min-height: 100px;
+    min-width: 100px;
+}
+.card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a shadow on hover */
+}
+
+.login-card{
+    background: linear-gradient(to bottom, rgb(182, 247, 251), rgb(87, 108, 152));
+    width: 60%;
+    height: auto;                            
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 50px;
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.form-group input[type="username"],
+.form-group input[type="password"],
+.form-group textarea {
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 50%;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+.form-group textarea {
+    resize: horizontal;
+}
+button{
+    background-color: #b5f8b5;
+    color: #000000;
+    border: none;
+    border-radius: 20px; 
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.6s;
+    margin: 20px 25px;
+}
+button:hover{
+        background-color: #006400; 
+        color: aliceblue;
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+a:hover{
+    color: rgb(183, 222, 250);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px;
+    color: white;
+}
+#menu-toggle {
+    display: block;
+    cursor: pointer;
+    background-color: #000000; /* Background color for the hamburger button */
+    border: none;
+    padding: 10px;
+  }
+.bar {
+    background-color: #fff; /* Color of the hamburger bars */
+    height: 3px;
+    width: 25px;
+    display: block;
+    margin: 4px auto;
+    transition: 0.4s; /* Transition for the bars */
+}
+#main-menu a {
+    color: rgb(252, 251, 251);
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Merriweather';
+    margin: 0 20px;
+}
+#main-menu a:hover{
+    color: rgb(87, 118, 158);
+}
+#main-menu.show-menu {
+    display: flex; 
+    justify-content: space-between;
+}
+#main-menu.show-menu a {
+    display: inline-block;
+}
+
+#main-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: max-height 1.2s ease-in-out;
+    overflow: hidden;
+}
+.feature-card-row {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    justify-content: space-between;
+  }
+.feature-card {
+    padding: 40px;
+    border: 1px solid #7b7b7b;
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.20);
+  }
+
+  .feature-card img {
+    border-radius: 7px 7px 0 0;
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    width: 75%;
+    height: auto;
+    justify-content: center;
+}
+  
+  .feature-card h2 {
+    color: rgb(0,0,0);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+  }
+  
+  .feature-card h2 em {
+    padding: 1.0em;
+    background-color: #eddbff;
+    border-radius: 4px;
+  }
+  
+  .feature-card p {
+    color: #797777;
+    font-size: 35px;
+    line-height: 1.5;
+  }
+  
+.content-container {
+    box-shadow: 4px rgba(0, 0, 0, 0.15);
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px;
+}
+.content-container p{
+    font-size: 30px;
+    font-family: 'Merriweather';
+    padding: 30px 10px;
+    margin: 10px;
+}
+.content-container h4{
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Barlow';
+    font-size: 26px;
+}
+.content-container ul,li{
+    text-align: center;
+    list-style: none;
+    font-family: 'Barlow';
+    font-size: 26px;
+}
+.content-container button{
+    display: block;
+    margin: 0 auto;
+}
+.banner {
+    background: linear-gradient(to bottom, #050c35, #2a80b9);
+    color: white; /* Text color */
+    text-align: center; /* Center align the text */
+    padding: 40px 0; /* Add some padding for spacing */
+}
+
+.banner h1 {
+    font-family: 'Merriweather';
+    font-size: 2em; /* Adjust the font size */
+    margin-bottom: 10px; /* Space between the two headings */
+}
+
+.banner h3 {
+    font-style: italic;
+    font-family: serif;
+    font-size: 1.0em; 
+}
+
+.card-description {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.card-details {
+    padding: 20px;
+}
+
+.card-image img {
+    max-width: 75%;
+    border-radius: 10px 10px 10px 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.application-form {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+}
+
+.application-form h2 {
+    text-align: center;
+}
+
+.application-form {
+    text-align: center; /* Center align the content within the .application-form container */
+}
+
+.application-form label, .application-form input {
+    display: block;
+    margin: 10px 0;
+}
+
+.application-form button {
+    background-color: #b5f8b5;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.input-container {
+    text-align: center; /* Center align the content within the .input-container */
+    margin: 10px auto; /* Center-align the input-container */
+}
+
+.input-container label, .input-container input {
+    display: block;
+    margin: 10px auto; /* Center-align the label and input within the .input-container */
+}
+
+@media (max-width: 768px) { /* sldo for mobile */
+    .content-container {
+        padding: 15px;
+    }
+    .login-card{
+        width: 75%;
+    }
+    .logo{
+        display: none;
+    }
+    header {
+        justify-content: space-between;
+    }
+nav{
+    font-size: 12px;;
+}
+    #menu-toggle {
+            display: block; /* Show the hamburger icon for mobile only */
+        }
+        
+    #main-menu {
+        display: none;
+    }
+    
+    #main-menu a {
+        display: none;
+        color: #fff;
+        text-decoration: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #main-menu.show-menu {
+        display: flex;
+        justify-content: space-between; /* Space menu items evenly */
+    }
+    #main-menu.show-menu a {
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+    .bar {
+        background-color: #fff;
+        height: 3px;
+        width: 25px;
+        display: block;
+        margin: 4px auto;
+        transition: 0.4s;
+    }
+    .contact-input {
+        flex: 1;
+        margin-right: 20px; 
+    }
+    
+    .contact-input input {
+        width: 100%;
+        padding: 0;
+        border: none;
+    }
+
+    .feature-card {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    
+    .feature-card img {
+        max-width: 100%;
+    }
+    
+    .feature-text {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    /* Adjust footer for smaller screens */
+    footer {
+        padding: 5px 0;
+    }
+
+      .card {
+        width: 85%;
+        margin: 10px 0 0 10px;
+        
+    }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-group input[type="username"],
+    .form-group input[type="password"],
+    .form-group textarea {
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 80%;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+}
+@media (min-width: 769px) {
+    #main-menu {
+        display: flex;
+    }
+
+    #main-menu a {
+        margin: 0 20px;
+    }
+
+    .bar {
+        display: none;
+    }
+}
+
+
+
+
+
